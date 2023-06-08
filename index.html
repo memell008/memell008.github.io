@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/hAD/hAD/hAD/hAD/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/hAD/hAD/2rL/2rL/hAD/hAD/2rL/2rL/hAD/2rL/2rL/2rL/2rL/hAD/2rL/hAD/hAD/2rL/2rL/2rL/2rL/hAD/hAD/2rL/hAD/2rL/2rL/2rL/2rL/hAD/hAD/hAD/2rL/2rL/2rL/2rL/2rL/2rL/hAD/hAD/hAD/2rL/2rL/2rL/2rL/hAD/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/hAD/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/hAD/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rL/2rIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mastermind</title>
+    <script type="module" crossorigin src="/assets/index-fdbb6624.js"></script>
+    <link rel="stylesheet" href="/assets/index-96074a20.css">
+  </head>
+  <body>
+
+  <div id="main">
+
+    <div id="leftColumn">
+
+      <div id="topDive">
+        <div id="topBtns">
+          <button id="restart">restart</button>
+        <button id="myBtn">instructions</button>
+        </div>
+        
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="textInstructions">hello sir</p>
+            </div>
+          </div>
+      </div>
+
+      <div id="middleDive">
+        <div id="buttonLevel">
+          <button id="easy" title="10 guesses">easy</button><br>
+          <button id="moderate" title="8 guesses">moderate</button><br>
+          <button id="hard" title="6 guesses">hard</button><br>
+          <output id="level"></output>
+        </div>
+      </div>
+
+      <div id="bottomDive">
+        <div id="best-score"></div>
+        <div id="originalCode"></div>
+        <div id="credit">Credit: Melchior Bataille</div>
+      </div>
+    </div>
+
+    <div id="rightColumn">
+      <div id="title">mastermind</div>
+      <input id="codeGuesser" minlength="4" type="text" placeholder="enter code" maxlength="4">
+      <table id="myTable">
+        <tr>
+          <td>Number of Guesse</td>
+          <td>Number in</td>
+          <td>Guesse</td>
+          <td>Exact num</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+
+
+    <div id="app"></div>
+    
+    
+  </body>
+</html>
